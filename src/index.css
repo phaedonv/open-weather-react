@@ -18,6 +18,10 @@ body {
   justify-content: center;
 }
 
+.app.warm {
+  background-image: url('./assets/warm-bg.jpg');
+}
+
 .container {
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
@@ -29,9 +33,22 @@ body {
   border-radius: 16px;
 }
 
-.app.warm {
+.container.warm {
   background-image: url('./assets/warm-bg.jpg');
 
+  /*not sure about this code..
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  */
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+  width: 35vw;
+  height: auto;
+
+  border-radius: 16px;
 }
 
 main {
