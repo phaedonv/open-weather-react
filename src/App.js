@@ -37,7 +37,8 @@ function App() {
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
       <main>
-        <div className="search-box">
+        <div className="container">
+          <div className="search-box">
           <input
             type="text"
             className="search-bar"
@@ -62,6 +63,8 @@ function App() {
         </div>
         ) : (<div className="default-info">The default view is under construction..
         please enter the location you want to search for and press enter!</div>)}
+        </div>
+
       </main>
     </div>
   );

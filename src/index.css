@@ -13,6 +13,20 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-image: url('./assets/cold-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+  width: 35vw;
+  height: auto;
+
+  border-radius: 16px;
 }
 
 .app.warm {
@@ -24,6 +38,8 @@ main {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
   padding:  25px;
+
+  display: flex;
 }
 
 .search-box {
@@ -42,8 +58,8 @@ main {
   outline: none;
 
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 16px 0 16px 0;
-  margin-top: -25px;
+  border-radius: 16px;
+  margin-top: 42px;
 
   box-shadow: 0 5px rgba(0, 0, 0, 0.2);
 
