@@ -60,7 +60,8 @@ function App() {
           <div className="weather">{weather.weather[0].main}</div>
         </div>
         </div>
-        ) : ('')}
+        ) : (<div className="default-info">The default view is under construction..
+        please enter the location you want to search for and press enter!</div>)}
       </main>
     </div>
   );
