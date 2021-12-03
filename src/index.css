@@ -27,8 +27,8 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
-  width: 35vw;
-  height: auto;
+  width: 52vw;
+  height: 42vh;
 
   border-radius: 16px;
 }
@@ -45,16 +45,16 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
-  width: 35vw;
-  height: auto;
+  width: 52vw;
+  height: 42vh;
 
   border-radius: 16px;
 }
 
 main {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
-  padding:  25px;
+  /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));*/
+  padding:  10vh;
 
   display: flex;
 }
@@ -143,4 +143,10 @@ main {
   font-style: italic;
   text-align: center;
   text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    color: lime;
+  }
 }
