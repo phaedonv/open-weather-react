@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "montseratt", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .app {
@@ -13,52 +13,16 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
-
-  display: flex;
-  justify-content: center;
 }
 
 .app.warm {
   background-image: url('./assets/warm-bg.jpg');
 }
 
-.container {
-  background-image: url('./assets/cold-bg.jpg');
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4 ease;
-  /*
-  width: 52vw;
-  height: auto;
-  */
-  border-radius: 16px;
-}
-
-.container.warm {
-  background-image: url('./assets/warm-bg.jpg');
-
-  /*not sure about this code..
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  */
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4 ease;
-  /*
-  width: 52vw;
-  height: auto;
-  */
-  border-radius: 16px;
-}
-
 main {
   min-height: 100vh;
-  /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));*/
-  padding:  10vh;
-
-  display: flex;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
 }
 
 .search-box {
@@ -77,11 +41,11 @@ main {
   outline: none;
 
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 16px;
-  margin-top: 42px;
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
 
-  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
   color: #313131;
   font-size: 20px;
 
@@ -137,23 +101,3 @@ main {
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
-
-.default-info {
-  color: #FFF;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
-}
-/*
-@media only screen and (max-width: 600px) {
-  .container {
-    height: 42vh;
-  }
-  
-  .container.warm {
-    height: 42vh;
-  }
-}
-*/

@@ -37,12 +37,11 @@ function App() {
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
       <main>
-        <div className={`${(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'container warm' : 'container') : 'container'}`}>
-          <div className="search-box">
-          <input
+        <div className="search-box">
+          <input 
             type="text"
             className="search-bar"
-            placeholder="..type 2 search..."
+            placeholder="Search..."
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
@@ -51,20 +50,17 @@ function App() {
         {(typeof weather.main != "undefined") ? (
         <div>
           <div className="location-box">
-          <div className="location">{weather.name}, {weather.sys.country}</div>
-          <div className="date">{dateBuilder(new Date())}</div>
-        </div>
-        <div className="weather-box">
-          <div className="temp">
-            {Math.round(weather.main.temp)}&deg;C
+            <div className="location">{weather.name}, {weather.sys.country}</div>
+            <div className="date">{dateBuilder(new Date())}</div>
           </div>
-          <div className="weather">{weather.weather[0].main}</div>
+          <div className="weather-box">
+            <div className="temp">
+              {Math.round(weather.main.temp)}°c
+            </div>
+            <div className="weather">{weather.weather[0].main}</div>
+          </div>
         </div>
-        </div>
-        ) : (<div className="default-info">The default view is under construction..
-        please enter the location you want to search for and press enter!</div>)}
-        </div>
-
+        ) : ('')}
       </main>
     </div>
   );
