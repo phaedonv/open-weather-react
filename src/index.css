@@ -27,9 +27,10 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
+  /*
   width: 52vw;
-  height: 42vh;
-
+  height: auto;
+  */
   border-radius: 16px;
 }
 
@@ -45,9 +46,10 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease;
+  /*
   width: 52vw;
-  height: 42vh;
-
+  height: auto;
+  */
   border-radius: 16px;
 }
 
@@ -144,9 +146,14 @@ main {
   text-align: center;
   text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
 }
-
+/*
 @media only screen and (max-width: 600px) {
   .container {
-    color: lime;
+    height: 42vh;
+  }
+  
+  .container.warm {
+    height: 42vh;
   }
 }
+*/
