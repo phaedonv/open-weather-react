@@ -34,6 +34,9 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
 
+  const element = <h1 className='testxt'>Hello testing World!!</h1>
+  
+
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
       <main>
@@ -47,6 +50,7 @@ function App() {
             onKeyPress={search}
           />
         </div>
+        {element}
         {(typeof weather.main != "undefined") ? (
         <div>
           <div className="location-box">
