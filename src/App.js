@@ -51,8 +51,6 @@ function App() {
           />
         </div>
 
-        {testxt}
-
         {(typeof weather.main != "undefined") ? (
         <div>
           <div className="location-box">
@@ -66,7 +64,7 @@ function App() {
             <div className="weather">{weather.weather[0].main}</div>
           </div>
         </div>
-        ) : ('')}
+        ) : testxt}
       </main>
     </div>
   );
