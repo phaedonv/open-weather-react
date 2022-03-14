@@ -34,7 +34,7 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
 
-  const element = <h1 className='testxt'>Hello testing World!!</h1>
+  const testxt = <h1 className='testxt'>Hello testing World!!</h1>
   
 
   return (
@@ -50,7 +50,9 @@ function App() {
             onKeyPress={search}
           />
         </div>
-        {element}
+
+        {testxt}
+
         {(typeof weather.main != "undefined") ? (
         <div>
           <div className="location-box">
