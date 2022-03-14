@@ -27,7 +27,7 @@ main {
 
 .search-box {
   width: 100%;
-  margin: 0 0 75px;
+  margin: 42px 0 75px;
 }
 
 .search-box .search-bar {
@@ -41,7 +41,7 @@ main {
   outline: none;
 
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
+  border-radius: 16px 16px 16px 16px;
   margin-top: -25px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
@@ -100,4 +100,13 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+#firewatch {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #943F25;
+  text-decoration: none;
+  font-weight: 800;
 }
