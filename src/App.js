@@ -34,7 +34,7 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
 
-  const testxt = [<h3 className='testxt'>welcome to the open weather eye</h3>, <br/>, <h2 className='testxt'>the app is still under construction..</h2>, <br/>, <h1 className='testxt'>please type a location to continue.</h1>];
+  const testxt = [<h1 className='testxt'><i class="fa fa-eye"></i></h1>, <h5 className='testxt'>welcome to the open weather eye</h5>, <br/>, <h4 className='testxt'>the app is still under construction..</h4>, <br/>, <h3 className='testxt'>please type a location to continue.</h3>];
   
 
   return (
