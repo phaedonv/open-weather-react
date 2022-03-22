@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-cont k3y = process.env.REACT_APP_WEATHER_KEY;
+const k3y = process.env.REACT_APP_WEATHER_KEY;
 
 const api = {
   key: k3y,
